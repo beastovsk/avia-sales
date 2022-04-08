@@ -1,0 +1,70 @@
+.main
+	position: relative
+	padding: 254px 0
+	min-height: 801px
+	background: linear-gradient(135.21deg, #00B0DE 0.36%, #01AEDC 4.04%, #02ABDB 7.77%, #02ABDB 11.48%, #02ABDB 11.7%, #196EBD 100%)
+
+	.logo_wrapper
+		position: absolute
+		top: 12px
+		left: 98px
+		width: 130px
+		display: flex
+		justify-content: space-between
+		.logo_link
+			font-style: normal
+			font-weight: 400
+			font-size: 20px
+			color: #fff
+			text-decoration: none
+
+	&_header
+		font-style: normal
+		font-weight: 700
+		font-size: 40px
+		text-align: center
+		color: #fff
+	&_subheader
+		margin-top: 8px
+		font-style: normal
+		font-weight: 700
+		font-size: 24px
+		text-align: center
+		color: #fff	
+	&_wrapper
+		width: 500px
+		margin: 0 auto
+		margin-top: 40px
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+	&_from
+		margin-right: 2px
+		@include main_input
+	&_where
+		@include main_input
+	&_find_btn
+		margin-top: 50px
+		display: block
+		width: 308px
+		height: 64px
+		background-color: #FF9241
+		border: none
+		border-radius: 4px
+
+		font-style: normal
+		font-weight: 900
+		font-size: 28px
+		color: #fff
+		transition: .3s all
+		&:hover
+			background-color: pink
+.directions
+	min-height: 1000px
+	&_round
+		width: 64px
+		height: 64px
+		border-radius: 100%
+		background-color: #E2F8FF
+	&_compass_img
+		width: 100%
