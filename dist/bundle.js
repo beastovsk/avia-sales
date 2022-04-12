@@ -16,7 +16,7 @@
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getAviaTickets)\n/* harmony export */ });\nfunction getAviaTickets() {\r\n    // Get tickets/info\r\n    console.log(true);\r\n}\r\n\n\n//# sourceURL=webpack://server/./server/src/server.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getAviaTickets)\n/* harmony export */ });\nfunction getAviaTickets() {\r\n    var url = \"http://map.aviasales.ru/supported_directions.json?origin_iata=LED&one_way=false&locale=ru\";\r\n    return new Promise(function (resolve, reject) {\r\n        var xhr = new XMLHttpRequest();\r\n        xhr.open(\"GET\", url);\r\n        xhr.addEventListener(\"load\", function () {\r\n            if (xhr.status >= 200 && xhr.status < 400) {\r\n                resolve(JSON.parse(xhr.responseText));\r\n            }\r\n            else {\r\n                reject(\"Oops! We've got a error: \".concat(xhr.statusText));\r\n            }\r\n        });\r\n        xhr.send();\r\n    })\r\n        .catch()\r\n        .then(function (response) {\r\n        // Getting an object which returns origin and directions of ticket\r\n        var arrayOfDirections = response.directions;\r\n        // We interesed in directions\r\n        arrayOfDirections.forEach(\r\n        // Getting only non-stop tickets for quick requests\r\n        function (direction) {\r\n            if (direction.direct === true) {\r\n                console.log(direction);\r\n            }\r\n        });\r\n    });\r\n}\r\n\n\n//# sourceURL=webpack://server/./server/src/server.ts?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _server_src_server__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../server/src/server */ \"./server/src/server.ts\");\n\r\nconsole.log((0,_server_src_server__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\n// Tickets API to HTML\r\n\n\n//# sourceURL=webpack://server/./webapp/src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _server_src_server__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../server/src/server */ \"./server/src/server.ts\");\n\r\n(0,_server_src_server__WEBPACK_IMPORTED_MODULE_0__[\"default\"])().then(function (item) { return console.log(item); });\r\n// Tickets API to HTML\r\n\n\n//# sourceURL=webpack://server/./webapp/src/index.ts?");
 
 /***/ })
 

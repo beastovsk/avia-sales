@@ -1,5 +1,6 @@
 import getAviaTickets from '../../server/src/server'
 
-console.log(getAviaTickets());
+
+getAviaTickets().then((item) => console.log(item));
 
 // Tickets API to HTML
