@@ -5,75 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aviabibis</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <section class="main">
         <div class="container">
-            <div class="logo_wrapper">
-                <img src="icons/logo.png" alt="logo" class="logo_img">
-                <a href="#" class="logo_link">aviabibis</a>
-            </div>
-            <h1 class="main_header">Поиск дешевых авиабилетов</h1>
-            <h2 class="main_subheader">Лучший способ купить авиабилеты дешево</h2>
-            <div class="main_wrapper">
-                <input type="text" placeholder="откуда" class="main_from">
-                <input type="text" placeholder="куда" class="main_where">
-                <button class="main_find_btn">Найти билеты <span class="icon-airplane"></span></button>
+            <a href="#" class="logo main__logo">
+                <img src="icons/logo.png" alt="logo" class="logo__img">
+                <span class="logo__text">aviabibis</span>
+            </a>
+            <h1 class="title main__title">Поиск дешевых авиабилетов</h1>
+            <h2 class="subtitle main__subtitle">Лучший способ купить авиабилеты дешево</h2>
+            <div class="main__wrapper">
+                <input type="text" placeholder="откуда" class="input main__input">
+                <input type="text" placeholder="куда" class="input main__input">
+                <button class="button main__button">Найти билеты <span class="icon-airplane"></span></button>
             </div>
         </div>
     </section>
 
     <section class="directions">
         <div class="container">
-            <div class="directions_round">
-                <img src="icons/compass.png" alt="compass" class="directions_compass_img">
+            <div class="round directions__round">
+                <img src="icons/compass.png" alt="compass" class="directions__compass-img">
+            </div>
+            <div class="directions__title-wrapper">
+               <h2 class="title directions__title">
+                  Популярные направления перелетов из города <a href="#" class="link directions__title-link">Москва</a>
+               </h2>
             </div>
 
-            <h2 class="directions_header">
-               Популярные направления перелетов из города <a href="#" class="directions_header_link">Москва</a>
-            </h2>
-
             <!-- Эту менюшку можно настроить с помощью класса active, т.е если нажать на одну из ссылок, то ссылка перекраситься в черный, а остальные ссылки в синий. -->
-            <div class="directions_change_wrapper">
-               <div class="directions_item">
-                  <div class="directions_item_round">
-                     <img src="icons/directions/map_item.svg" alt="map" class="directions_item_img">
+            <div class="directions__change-wrapper">
+               <div class="directions__item">
+                  <div class="round directions__item-round">
+                     <img src="icons/directions/map_item.svg" alt="map" class="directions__item-img">
                   </div>
-                  <a href="#" class="directions_item_link directions_item_link_active">КУДА УГОДНО</a>
+                  <a href="#" class="link directions__item-link link_active">КУДА УГОДНО</a>
                </div>
-               <div class="directions_item">
-                  <div class="directions_item_round">
-                     <img src="icons/directions/palm_item.svg" alt="palm" class="directions_item_img">
+               <div class="directions__item">
+                  <div class="round directions__item-round">
+                     <img src="icons/directions/palm_item.svg" alt="palm" class="directions__item-img">
                   </div>
-                  <a href="#" class="directions_item_link">CОЛНЦЕ И МОРЕ</a>
+                  <a href="#" class="link directions__item-link">CОЛНЦЕ И МОРЕ</a>
                </div>
-               <div class="directions_item">
-                  <div class="directions_item_round">
-                     <img src="icons/directions/shopping_item.svg" alt="shopping" class="directions_item_img">
+               <div class="directions__item">
+                  <div class="round directions__item-round">
+                     <img src="icons/directions/shopping_item.svg" alt="shopping" class="directions__item-img">
                   </div>
-                  <a href="#" class="directions_item_link">ШОПИНГ, ГОРОД</a>
+                  <a href="#" class="link directions__item-link">ШОПИНГ, ГОРОД</a>
                </div>
-               <div class="directions_item">
-                  <div class="directions_item_round">
-                     <img src="icons/directions/history_item.svg" alt="history" class="directions_item_img">
+               <div class="directions__item">
+                  <div class="round directions__item-round">
+                     <img src="icons/directions/history_item.svg" alt="history" class="directions__item-img">
                   </div>
-                  <a href="#" class="directions_item_link">КУЛЬТУРА И ИСТОРИЯ</a>
+                  <a href="#" class="link directions__item-link">КУЛЬТУРА И ИСТОРИЯ</a>
                </div>
-               <div class="directions_item">
-                  <div class="directions_item_round">
-                     <img src="icons/directions/club_item.svg" alt="club" class="directions_item_img">
+               <div class="directions__item">
+                  <div class="round directions__item-round">
+                     <img src="icons/directions/club_item.svg" alt="club" class="directions__item-img">
                   </div>
-                  <a href="#" class="directions_item_link">НОЧНАЯ ЖИЗНЬ</a>
+                  <a href="#" class="link directions__item-link">НОЧНАЯ ЖИЗНЬ</a>
                </div>
-               <div class="directions_item">
-                  <div class="directions_item_round">
-                     <img src="icons/directions/stroller_item.svg" alt="stroller" class="directions_item_img">
+               <div class="directions__item">
+                  <div class="round directions__item-round">
+                     <img src="icons/directions/stroller_item.svg" alt="stroller" class="directions__item-img">
                   </div>
-                  <a href="#" class="directions_item_link">ОТДЫХ С ДЕТЬМИ</a>
+                  <a href="#" class="link directions__item-link">ОТДЫХ С ДЕТЬМИ</a>
                </div>
             </div>
         </div>
