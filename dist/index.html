@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,11 +18,11 @@
             </a>
             <h1 class="title main__title">Поиск дешевых авиабилетов</h1>
             <h2 class="subtitle main__subtitle">Лучший способ купить авиабилеты дешево</h2>
-            <div class="main__wrapper">
-                <input type="text" placeholder="откуда" class="input main__input">
-                <input type="text" placeholder="куда" class="input main__input">
+            <form action="" class="route-form main__route-form">
+               <input name="from" type="text" placeholder="откуда" class="input main__input">
+                <input name="where" type="text" placeholder="куда" class="input main__input">
                 <button class="button main__button">Найти билеты <span class="icon-airplane"></span></button>
-            </div>
+            </form>
         </div>
     </section>
 
@@ -38,44 +38,109 @@
             </div>
 
             <!-- Эту менюшку можно настроить с помощью класса active, т.е если нажать на одну из ссылок, то ссылка перекраситься в черный, а остальные ссылки в синий. -->
-            <div class="directions__change-wrapper">
-               <div class="directions__item">
-                  <div class="round directions__item-round">
-                     <img src="icons/directions/map_item.svg" alt="map" class="directions__item-img">
+            <ul class="directions__tabs">
+               <li class="directions__tab">
+                  <div class="round directions__tab-round">
+                     <img src="icons/directions/map_item.svg" alt="map" class="directions__tab-img">
                   </div>
-                  <a href="#" class="link directions__item-link link_active">КУДА УГОДНО</a>
+                  <a href="#" class="link directions__tab-link link_active">КУДА УГОДНО</a>
+               </li>
+               <li class="directions__tab">
+                  <div class="round directions__tab-round">
+                     <img src="icons/directions/palm_item.svg" alt="palm" class="directions__tab-img">
+                  </div>
+                  <a href="#" class="link directions__tab-link">CОЛНЦЕ И МОРЕ</a>
+               </li>
+               <li class="directions__tab">
+                  <div class="round directions__tab-round">
+                     <img src="icons/directions/shopping_item.svg" alt="shopping" class="directions__tab-img">
+                  </div>
+                  <a href="#" class="link directions__tab-link">ШОПИНГ, ГОРОД</a>
+               </li>
+               <li class="directions__tab">
+                  <div class="round directions__tab-round">
+                     <img src="icons/directions/history_item.svg" alt="history" class="directions__tab-img">
+                  </div>
+                  <a href="#" class="link directions__tab-link">КУЛЬТУРА И ИСТОРИЯ</a>
+               </li>
+               <li class="directions__tab">
+                  <div class="round directions__tab-round">
+                     <img src="icons/directions/club_item.svg" alt="club" class="directions__tab-img">
+                  </div>
+                  <a href="#" class="link directions__tab-link">НОЧНАЯ ЖИЗНЬ</a>
+               </li>
+               <li class="directions__tab">
+                  <div class="round directions__tab-round">
+                     <img src="icons/directions/stroller_item.svg" alt="stroller" class="directions__tab-img">
+                  </div>
+                  <a href="#" class="link directions__tab-link">ОТДЫХ С ДЕТЬМИ</a>
+               </li>
+            </ul>
+
+            <!-- данная конструкция нужна для табов: при нажатии на один из табов - мы переключаемся межту контентом, в котором находятся item-ы; переключение происходит по индексу -->
+            <div class="directions__content">
+               <div class="directions-item">
+                  <div class="directions-item__header">
+                     <img src="img/city-img/city-img1.png" alt="city" class="directions-item__header-img">
+                  </div>
+                  <div class="directions-item__footer">
+                     <div class="directions-item__footer-left">
+                        <img src="icons/flags/flag-ru.png" alt="russia" class="directions-item__footer-img">
+                        <div>
+                           <div class="directions-item__subtitle">Краснодар</div>
+                           <div class="directions-item__descr">Россия</div>
+                        </div>
+                     </div>
+                     <div class="direction-item__footer-right">
+                        <a href="#" class="link directions-item__link">Найти от 1 212 &#8381;</a>
+                        <div class="directions-item__date">18 марта</div>
+                     </div>
+                  </div>
                </div>
-               <div class="directions__item">
-                  <div class="round directions__item-round">
-                     <img src="icons/directions/palm_item.svg" alt="palm" class="directions__item-img">
+
+               <div class="directions-item">
+                  <div class="directions-item__header">
+                     <img src="img/city-img/city-img2.jpg" alt="city" class="directions-item__header-img">
                   </div>
-                  <a href="#" class="link directions__item-link">CОЛНЦЕ И МОРЕ</a>
+                  <div class="directions-item__footer">
+                     <div class="directions-item__footer-left">
+                        <img src="icons/flags/flag-ru.png" alt="russia" class="directions-item__footer-img">
+                        <div>
+                           <div class="directions-item__subtitle">Сочи (Адлер)</div>
+                           <div class="directions-item__descr">Россия</div>
+                        </div>
+                     </div>
+                     <div class="direction-item__footer-right">
+                        <a href="#" class="link directions-item__link">Найти от 1 334 &#8381;</a>
+                        <div class="directions-item__date">27 марта</div>
+                     </div>
+                  </div>
                </div>
-               <div class="directions__item">
-                  <div class="round directions__item-round">
-                     <img src="icons/directions/shopping_item.svg" alt="shopping" class="directions__item-img">
+
+               <div class="directions-item">
+                  <div class="directions-item__header">
+                     <img src="img/city-img/city-img3.jpg" alt="city" class="directions-item__header-img">
                   </div>
-                  <a href="#" class="link directions__item-link">ШОПИНГ, ГОРОД</a>
-               </div>
-               <div class="directions__item">
-                  <div class="round directions__item-round">
-                     <img src="icons/directions/history_item.svg" alt="history" class="directions__item-img">
+                  <div class="directions-item__footer">
+                     <div class="directions-item__footer-left">
+                        <img src="icons/flags/flag-ru.png" alt="russia" class="directions-item__footer-img">
+                        <div>
+                           <div class="directions-item__subtitle">Санкт-Петербург</div>
+                           <div class="directions-item__descr">Россия</div>
+                        </div>
+                     </div>
+                     <div class="direction-item__footer-right">
+                        <a href="#" class="link directions-item__link">Найти от 1 508 &#8381;</a>
+                        <div class="directions-item__date">19 февраля</div>
+                     </div>
                   </div>
-                  <a href="#" class="link directions__item-link">КУЛЬТУРА И ИСТОРИЯ</a>
-               </div>
-               <div class="directions__item">
-                  <div class="round directions__item-round">
-                     <img src="icons/directions/club_item.svg" alt="club" class="directions__item-img">
-                  </div>
-                  <a href="#" class="link directions__item-link">НОЧНАЯ ЖИЗНЬ</a>
-               </div>
-               <div class="directions__item">
-                  <div class="round directions__item-round">
-                     <img src="icons/directions/stroller_item.svg" alt="stroller" class="directions__item-img">
-                  </div>
-                  <a href="#" class="link directions__item-link">ОТДЫХ С ДЕТЬМИ</a>
                </div>
             </div>
+            <div class="directions__content"></div>
+            <div class="directions__content"></div>
+            <div class="directions__content"></div>
+            <div class="directions__content"></div>
+            <div class="directions__content"></div>
         </div>
     </section>
 </body>
