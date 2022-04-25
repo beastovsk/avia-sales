@@ -1,147 +1,262 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aviabibis</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>aviabibis</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="main">
-        <div class="container">
-            <a href="#" class="logo main__logo">
-                <img src="icons/logo.png" alt="logo" class="logo__img">
-                <span class="logo__text">aviabibis</span>
-            </a>
-            <h1 class="title main__title">Поиск дешевых авиабилетов</h1>
-            <h2 class="subtitle main__subtitle">Лучший способ купить авиабилеты дешево</h2>
-            <form action="" class="route-form main__route-form">
-               <input name="from" type="text" placeholder="откуда" class="input main__input">
-                <input name="where" type="text" placeholder="куда" class="input main__input">
-                <button class="button main__button">Найти билеты <span class="icon-airplane"></span></button>
-            </form>
-        </div>
-    </section>
+	<section class="main">
+		<div class="container">
+			<a href="#" class="logo main__logo">
+				<img src="icons/logo.png" alt="logo" class="logo__img">
+				<span class="logo__text">aviabibis</span>
+			</a>
+			<h1 class="title main__title">Поиск дешевых авиабилетов</h1>
+			<h2 class="subtitle main__subtitle">Лучший способ купить авиабилеты дешево</h2>
+			<form action="" class="route-form main__route-form">
+			   <input name="from" type="text" placeholder="откуда" class="input main__input">
+				<input name="where" type="text" placeholder="куда" class="input main__input">
+				<button class="button main__button">Найти билеты <span class="icon-airplane"></span></button>
+			</form>
+		</div>
+	</section>
 
-    <section class="directions">
-        <div class="container">
-            <div class="round directions__round">
-                <img src="icons/compass.png" alt="compass" class="directions__compass-img">
-            </div>
-            <div class="directions__title-wrapper">
-               <h2 class="title directions__title">
-                  Популярные направления перелетов из города <a href="#" class="link directions__title-link">Москва</a>
-               </h2>
-            </div>
+	<section class="directions">
+		<div class="container">
+			<div class="round directions__round">
+				<img src="icons/compass.png" alt="compass" class="directions__compass-img">
+			</div>
+			<div class="directions__title-wrapper">
+			   <h2 class="title directions__title">
+				  Популярные направления перелетов из города <a href="#" class="link directions__title-link">Москва</a>
+			   </h2>
+			</div>
 
-            <!-- Эту менюшку можно настроить с помощью класса active, т.е если нажать на одну из ссылок, то ссылка перекраситься в черный, а остальные ссылки в синий. -->
-            <ul class="directions__tabs">
-               <li class="directions__tab">
-                  <div class="round directions__tab-round">
-                     <img src="icons/directions/map_item.svg" alt="map" class="directions__tab-img">
-                  </div>
-                  <a href="#" class="link directions__tab-link link_active">КУДА УГОДНО</a>
-               </li>
-               <li class="directions__tab">
-                  <div class="round directions__tab-round">
-                     <img src="icons/directions/palm_item.svg" alt="palm" class="directions__tab-img">
-                  </div>
-                  <a href="#" class="link directions__tab-link">CОЛНЦЕ И МОРЕ</a>
-               </li>
-               <li class="directions__tab">
-                  <div class="round directions__tab-round">
-                     <img src="icons/directions/shopping_item.svg" alt="shopping" class="directions__tab-img">
-                  </div>
-                  <a href="#" class="link directions__tab-link">ШОПИНГ, ГОРОД</a>
-               </li>
-               <li class="directions__tab">
-                  <div class="round directions__tab-round">
-                     <img src="icons/directions/history_item.svg" alt="history" class="directions__tab-img">
-                  </div>
-                  <a href="#" class="link directions__tab-link">КУЛЬТУРА И ИСТОРИЯ</a>
-               </li>
-               <li class="directions__tab">
-                  <div class="round directions__tab-round">
-                     <img src="icons/directions/club_item.svg" alt="club" class="directions__tab-img">
-                  </div>
-                  <a href="#" class="link directions__tab-link">НОЧНАЯ ЖИЗНЬ</a>
-               </li>
-               <li class="directions__tab">
-                  <div class="round directions__tab-round">
-                     <img src="icons/directions/stroller_item.svg" alt="stroller" class="directions__tab-img">
-                  </div>
-                  <a href="#" class="link directions__tab-link">ОТДЫХ С ДЕТЬМИ</a>
-               </li>
-            </ul>
+			<!-- Эту менюшку можно настроить с помощью класса active, т.е если нажать на одну из ссылок, то ссылка перекраситься в черный, а остальные ссылки в синий. -->
+			<ul class="directions__tabs">
+			   <li class="directions__tab">
+				  <div class="round directions__tab-round">
+					 <img src="icons/directions/map_item.svg" alt="map" class="directions__tab-img">
+				  </div>
+				  <a href="#" class="link directions__tab-link link_active">КУДА УГОДНО</a>
+			   </li>
+			   <li class="directions__tab">
+				  <div class="round directions__tab-round">
+					 <img src="icons/directions/palm_item.svg" alt="palm" class="directions__tab-img">
+				  </div>
+				  <a href="#" class="link directions__tab-link">CОЛНЦЕ И МОРЕ</a>
+			   </li>
+			   <li class="directions__tab">
+				  <div class="round directions__tab-round">
+					 <img src="icons/directions/shopping_item.svg" alt="shopping" class="directions__tab-img">
+				  </div>
+				  <a href="#" class="link directions__tab-link">ШОПИНГ, ГОРОД</a>
+			   </li>
+			   <li class="directions__tab">
+				  <div class="round directions__tab-round">
+					 <img src="icons/directions/history_item.svg" alt="history" class="directions__tab-img">
+				  </div>
+				  <a href="#" class="link directions__tab-link">КУЛЬТУРА И ИСТОРИЯ</a>
+			   </li>
+			   <li class="directions__tab">
+				  <div class="round directions__tab-round">
+					 <img src="icons/directions/club_item.svg" alt="club" class="directions__tab-img">
+				  </div>
+				  <a href="#" class="link directions__tab-link">НОЧНАЯ ЖИЗНЬ</a>
+			   </li>
+			   <li class="directions__tab">
+				  <div class="round directions__tab-round">
+					 <img src="icons/directions/stroller_item.svg" alt="stroller" class="directions__tab-img">
+				  </div>
+				  <a href="#" class="link directions__tab-link">ОТДЫХ С ДЕТЬМИ</a>
+			   </li>
+			</ul>
 
-            <!-- данная конструкция нужна для табов: при нажатии на один из табов - мы переключаемся межту контентом, в котором находятся item-ы; переключение происходит по индексу -->
-            <div class="directions__content">
-               <div class="directions-item">
-                  <div class="directions-item__header">
-                     <img src="img/city-img/city-img1.png" alt="city" class="directions-item__header-img">
-                  </div>
-                  <div class="directions-item__footer">
-                     <div class="directions-item__footer-left">
-                        <img src="icons/flags/flag-ru.png" alt="russia" class="directions-item__footer-img">
-                        <div>
-                           <div class="directions-item__subtitle">Краснодар</div>
-                           <div class="directions-item__descr">Россия</div>
-                        </div>
-                     </div>
-                     <div class="direction-item__footer-right">
-                        <a href="#" class="link directions-item__link">Найти от 1 212 &#8381;</a>
-                        <div class="directions-item__date">18 марта</div>
-                     </div>
-                  </div>
-               </div>
+			<!-- данная конструкция нужна для табов: при нажатии на один из табов - мы переключаемся межту контентом, в котором находятся item-ы; переключение происходит по индексу -->
+			<div class="directions__content">
+			   <div class="directions-item">
+				  <div class="directions-item__header">
+					 <img src="img/city-img/city-img1.png" alt="city" class="directions-item__header-img">
+				  </div>
+				  <div class="directions-item__footer">
+					 <div class="directions-item__footer-left">
+						<img src="icons/flags/flag-ru.png" alt="russia" class="directions-item__footer-img">
+						<div>
+						   <div class="directions-item__subtitle">Краснодар</div>
+						   <div class="directions-item__descr">Россия</div>
+						</div>
+					 </div>
+					 <div class="direction-item__footer-right">
+						<a href="#" class="link directions-item__link">Найти от 1 212 &#8381;</a>
+						<div class="directions-item__date">18 марта</div>
+					 </div>
+				  </div>
+			   </div>
 
-               <div class="directions-item">
-                  <div class="directions-item__header">
-                     <img src="img/city-img/city-img2.jpg" alt="city" class="directions-item__header-img">
-                  </div>
-                  <div class="directions-item__footer">
-                     <div class="directions-item__footer-left">
-                        <img src="icons/flags/flag-ru.png" alt="russia" class="directions-item__footer-img">
-                        <div>
-                           <div class="directions-item__subtitle">Сочи (Адлер)</div>
-                           <div class="directions-item__descr">Россия</div>
-                        </div>
-                     </div>
-                     <div class="direction-item__footer-right">
-                        <a href="#" class="link directions-item__link">Найти от 1 334 &#8381;</a>
-                        <div class="directions-item__date">27 марта</div>
-                     </div>
-                  </div>
-               </div>
+			   <div class="directions-item">
+				  <div class="directions-item__header">
+					 <img src="img/city-img/city-img2.jpg" alt="city" class="directions-item__header-img">
+				  </div>
+				  <div class="directions-item__footer">
+					 <div class="directions-item__footer-left">
+						<img src="icons/flags/flag-ru.png" alt="russia" class="directions-item__footer-img">
+						<div>
+						   <div class="directions-item__subtitle">Сочи (Адлер)</div>
+						   <div class="directions-item__descr">Россия</div>
+						</div>
+					 </div>
+					 <div class="direction-item__footer-right">
+						<a href="#" class="link directions-item__link">Найти от 1 334 &#8381;</a>
+						<div class="directions-item__date">27 марта</div>
+					 </div>
+				  </div>
+			   </div>
 
-               <div class="directions-item">
-                  <div class="directions-item__header">
-                     <img src="img/city-img/city-img3.jpg" alt="city" class="directions-item__header-img">
-                  </div>
-                  <div class="directions-item__footer">
-                     <div class="directions-item__footer-left">
-                        <img src="icons/flags/flag-ru.png" alt="russia" class="directions-item__footer-img">
-                        <div>
-                           <div class="directions-item__subtitle">Санкт-Петербург</div>
-                           <div class="directions-item__descr">Россия</div>
-                        </div>
-                     </div>
-                     <div class="direction-item__footer-right">
-                        <a href="#" class="link directions-item__link">Найти от 1 508 &#8381;</a>
-                        <div class="directions-item__date">19 февраля</div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="directions__content"></div>
-            <div class="directions__content"></div>
-            <div class="directions__content"></div>
-            <div class="directions__content"></div>
-            <div class="directions__content"></div>
-        </div>
-    </section>
+			   <div class="directions-item">
+				  <div class="directions-item__header">
+					 <img src="img/city-img/city-img3.jpg" alt="city" class="directions-item__header-img">
+				  </div>
+				  <div class="directions-item__footer">
+					 <div class="directions-item__footer-left">
+						<img src="icons/flags/flag-ru.png" alt="russia" class="directions-item__footer-img">
+						<div>
+						   <div class="directions-item__subtitle">Санкт-Петербург</div>
+						   <div class="directions-item__descr">Россия</div>
+						</div>
+					 </div>
+					 <div class="direction-item__footer-right">
+						<a href="#" class="link directions-item__link">Найти от 1 508 &#8381;</a>
+						<div class="directions-item__date">19 февраля</div>
+					 </div>
+				  </div>
+			   </div>
+			</div>
+			<div class="directions__content"></div>
+			<div class="directions__content"></div>
+			<div class="directions__content"></div>
+			<div class="directions__content"></div>
+			<div class="directions__content"></div>
+		</div>
+	</section>
+
+	<section class="best-prices">
+	  <div class="container">
+		 <div class="round best-prices__round">
+			<img src="icons/calendar.png" alt="calendar" class="best-prices__calendar-img">
+		 </div>
+		 <h2 class="title best-prices__title">Лучшие цены на авиабилеты за последний месяц</h2>
+
+		 <div class="best-prices__content">
+			<div class="best-prices__item">
+			   <div class="best-prices__header">
+				 <img src="icons/flags/flag-ru.png" alt="ru" class="best-prices__header-img">
+				 <div>
+					 <div class="best-prices__subtitle">Симферополь (Крым)</div>
+					 <div class="best-prices__country">крым</div>
+				 </div>
+			   </div>
+			   <ul class="best-prices__list">
+				  <li class="best-prices__list-item">
+					Из Москвы
+					<a href="#" class="link best-prices__link">от 4 813 &#8381;</a>
+				  </li>
+				  <li class="best-prices__list-item">
+					 Из Санкт-Петербурга
+					 <a href="#" class="link best-prices__link">от 7 857 &#8381;</a>
+				  </li>
+				  <li class="best-prices__list-item">
+					 Из Новосибирска
+					 <a href="#" class="link best-prices__link">от 15 127 &#8381;</a>
+				  </li>
+				  <li class="best-prices__list-item">
+					 Из Екатеринбурга
+					 <a href="#" class="link best-prices__link">от 9 275 &#8381;</a>
+				  </li>
+				  <li class="best-prices__list-item">
+					 Из Челябинска
+					 <a href="#" class="link best-prices__link">от 9 148 &#8381;</a>
+				  </li>
+			   </ul>
+			</div>
+
+			<div class="best-prices__item">
+			   <div class="best-prices__header">
+				 <img src="icons/flags/flag-am.png" alt="am" class="best-prices__header-img">
+				 <div>
+					 <div class="best-prices__subtitle">Ереван</div>
+					 <div class="best-prices__country">армения</div>
+				 </div>
+			   </div>
+			   <ul class="best-prices__list">
+				  <li class="best-prices__list-item">
+					Из Москвы
+					<a href="#" class="link best-prices__link">от 6 758 &#8381;</a>
+				  </li>
+				  <li class="best-prices__list-item">
+					Из Санкт-Петербурга
+					<a href="#" class="link best-prices__link">от 9 932 &#8381;</a>
+				  </li>
+				  <li class="best-prices__list-item">
+					Из Сочи
+					<a href="#" class="link best-prices__link">от 11 951 &#8381;</a>
+				  </li>
+				  <li class="best-prices__list-item">
+					Из Краснодара
+					<a href="#" class="link best-prices__link">от 11 741  &#8381;</a>
+				  </li>
+				  <li class="best-prices__list-item">
+					Из Ростова-на-Дону
+					<a href="#" class="link best-prices__link">от 11 956 &#8381;</a>
+				  </li>
+			   </ul>
+			</div>
+
+			<div class="best-prices__item">
+			   <div class="best-prices__header">
+				 <img src="icons/flags/flag-md.png" alt="md" class="best-prices__header-img">
+				 <div>
+					 <div class="best-prices__subtitle">Кишинёв</div>
+					 <div class="best-prices__country">молдавия</div>
+				 </div>
+			   </div>
+			   <ul class="best-prices__list">
+				  <li class="best-prices__list-item">
+					Из Москвы
+					<a href="#" class="link best-prices__link">от 8 319 &#8381;</a>
+				  </li>
+				  <li class="best-prices__list-item">
+					Из Санкт-Петербурга
+					<a href="#" class="link best-prices__link">от 10 800 &#8381;</a>
+				  </li>
+				  <li class="best-prices__list-item">
+					Из Краснодара
+					<a href="#" class="link best-prices__link">от 12 098 &#8381;</a>
+				  </li>
+				  <li class="best-prices__list-item">
+					Из Сургута
+					<a href="#" class="link best-prices__link">от 16 277 &#8381;</a>
+				  </li>
+				  <li class="best-prices__list-item">
+					Из Нового Уренгоя
+					<a href="#" class="link best-prices__link">от 15 987 &#8381;</a>
+				  </li>
+			   </ul>
+			</div>
+		 </div>
+
+		 <div class="best-prices__descr">
+		   Мы знаем, где купить авиабилеты дешево. Билеты на самолет в 220 стран мира. Поиск и сравнение цен на авиабилеты среди 100 агентств и 728 авиакомпаний.
+		 </div>
+
+		 <div class="best-prices__warning">
+		   Цены, найденные пользователями за последние 48 часов, не являются офертой.
+		 </div>
+	  </div>
+   </section>
 </body>
 </html>
